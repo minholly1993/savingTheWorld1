@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <h1>Timer</h1>
+    <h2 id="timer">00:00:00</h2>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    <script src="timerCode/countup.js"></script>
+    
+    <p> </p>
+    
+    <h1>Countdown Timer</h1>
+    <h2 id="time">00:00:00</h2>
+    <input type="number" id="hours" placeholder="Hours">
+    <p> </p>
+    <input type="number" id="minutes" placeholder="Minutes">
+    <p> </p>
+    <input type="number" id="seconds" placeholder="Seconds">
+    <p> </p>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+    <script src="timerCode/countdown.js"></script>
+    
+    <p> </p>
+
+    <h2 id="t">00:00:00</h2>
+    <button onclick="pomodoro()"><img src="https://drive.google.com/file/d/15vNpfMGIDsYK9KIWNmRvDePrMRUXCH4U/view" alt="tomato"></button>
+    <button onclick="stopT()">Stop</button>
+    <button onclick="resetT()">Reset</button>
+    <script src="timerCode/tomato.js"></script>
+  </body>
+  
+</html>

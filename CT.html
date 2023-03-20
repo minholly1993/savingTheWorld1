@@ -1,1 +1,25 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="static/stylet.css">
+  </head>
+  <body>
+    <h1>Countdown Timer</h1>
+    <h2 id="time">00:00:00</h2>
+    <input type="number" id="hours" placeholder="Hours">
+    <p> </p>
+    <input type="number" id="minutes" placeholder="Minutes">
+    <p> </p>
+    <input type="number" id="seconds" placeholder="Seconds">
+    <p> </p>
+    <button onclick="startTimer()">Start</button>
+    <button onclick="stopTimer()">Stop</button>
+    <button onclick="resetTimer()">Reset</button>
+    <button onclick="conTimer()">Continue</button>
+    <a href = "index.html">
+      <button>Back</button>
+    </a>
+    <script src="timerCode/countdown.js"></script>
+  </body>
+</html>

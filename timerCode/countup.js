@@ -1,15 +1,17 @@
 let timerInterval
-let totalSeconds = 0
-let totalSeconds1 = 0
 let sec = 0
 let min = 0
 let h = 0
+let pass = 0
+let sp = false
 
 function start() {
+  sp = false
   timerInterval = setInterval(change, 1000)
 }
 
 function stop() {
+  sp = true
   clearInterval(timerInterval)
 }
 
@@ -31,6 +33,21 @@ function change() {
     min = 0
     h+=1
   }
+  pass += 1
   let timeString = h.toString().padStart(2, "0") + ":" + min.toString().padStart(2, "0") + ":" + sec.toString().padStart(2, "0")
   document.getElementById("timer").innerHTML = timeString
+}
+
+function startT(){
+  h = Math.floor(pass/3600)
+  min = Math.floor(pass/60)
+  sec = pass- h*3600 - min*60
+  sp = false
+  timerInterval = setInterval(change, 1000)
+}
+
+function conT() {
+  if (sp === true) {
+    startT()
+  }
 }

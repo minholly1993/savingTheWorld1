@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timer</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+  </head>
+  <body>
+    <h1>Timer</h1>
+    <h2 id="timer">00:00:00</h2>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="conT()">Continue</button>
+    <a href = "index.html">
+      <button>Back</button>
+    </a>
+    <script src="timerCode/countup.js"></script>
+  </body>
+</html>
